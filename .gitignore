@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Ignore Data (Never commit datasets!)
+data/raw/*
+data/processed/*
+
+# Ignore Jupyter cache
+.ipynb_checkpoints/
+__pycache__/
+
+# Mac garbage (if you ever work on Mac)
+.DS_Store
