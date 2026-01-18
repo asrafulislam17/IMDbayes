@@ -1,4 +1,4 @@
-## [Read the Related Blogpost](https://fezcode.com/blog/what-genre-should-i-watch)
+## [Read the Related Blogpost](https://fezcode.com/blog/what-genre-should-i-watch?theme=editorial)
 
 # IMDbayes (_"I'm Da Bayes"_) : IMDb Genre Gap Analysis & Recommender
 > _I love it when you call me Big Data._
